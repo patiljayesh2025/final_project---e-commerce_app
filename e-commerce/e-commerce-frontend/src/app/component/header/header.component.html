@@ -1,0 +1,261 @@
+<header>
+    <div class="poster">
+        <div class="">
+            <div class="nav-links">
+                <div class="navbar  shadow-lg">
+                    <div class="navbar-brand align-item-center d-flex logo-style">
+                        <div class="nav-items">
+                            <i class="item" style="font-size: 40px;" class="bi bi-bag-check"></i>&nbsp;
+                            <strong style="font-size: 30px;" class="item">myKart</strong>
+                        </div>
+                        <div class="nav-items">
+                            <strong class="item" routerLink="/home" type="button">Home</strong>
+                            <strong class="item" data-bs-toggle="modal" data-bs-target="#myModal5" type="button">Contact</strong>
+                            <div class="modal" id="myModal5">
+                                <div class="modal-dialog">
+                                    <div class="modal-content about-us-page">
+                                        <!-- <div class="modal-header">
+                                       
+                                        </div> -->
+                                        <div class="modal-body">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                                            <div class="container">
+                                                <div class="about-us row text-center">
+                                                    <div style="font-size: 80px;">
+                                                        <i class="bi bi-bag-check"></i>
+                                                    </div>
+                                                    <span style="margin-top:20px;">Get in touch</span>
+                                                </div>
+                                                <div class="row align-center">
+
+                                                    <span style="margin-top: 50px;" class="row"> 
+                                                <div class="col-6">
+                                                    <ul> 
+                                                        <strong> <li>Contact Us</li> </strong>
+                                                         <li><a href="mailto:jayeshsmpatil@gmail.com">Reach out on mail </a></li>
+                                                         <li>Contact Number : 9881530587</li>
+                                                         <li> Address : Shivaji Nagar , Pune , Maharashtra </li>
+                                                      </ul> 
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul> 
+                                                        <strong> <li>Follow us on</li> </strong>
+                                                         <li><i class="fab fa-twitter fa-xl" style="font-size: 25px;margin-top:5px"></i> &nbsp;&nbsp;Twitter</li>
+                                                         <li><i class="fab fa-facebook-square" style="font-size: 25px;margin-top:5px"></i>&nbsp; &nbsp;Facebook</li>
+                                                      </ul> 
+                                                </div>
+
+                                           
+                                            </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <strong class="item" data-bs-toggle="modal" data-bs-target="#myModal4" type="button">About</strong>
+                            <div class="modal" id="myModal4">
+                                <div class="modal-dialog">
+                                    <div class="modal-content about-us-page">
+                                        <!-- <div class="modal-header">
+                                       
+                                        </div> -->
+                                        <div class="modal-body">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                                            <div class="container">
+                                                <div class="about-us row text-center">
+                                                    <div style="font-size: 80px;">
+                                                        <i class="bi bi-bag-check"></i>
+                                                    </div>
+                                                    <span style="margin-top:20px;">We are India's biggest marketplace.</span>
+                                                </div>
+                                                <div class="row align-center">
+
+                                                    <span style="text-align: center;margin-top: 50px;"> myKart, which has redefined shopping in India, works on a B2C (business to consumer model). <br> mykart started off with a direct-to-consumer model selling books and some other products, <br> before turning to a marketplace model which connect sellers and buyers and expanding its catalogue </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-style">
+                        <span *ngIf="isLoggedIn===true"><a routerLink="/cart"><i style="font-size: 20px;" class="fas fa-cart-plus"></i> <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div></a></span>
+                        <span *ngIf="true">   <app-login></app-login></span>
+                    </div>
+
+
+                    <!-- <div class="form-group"><input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products"></div><span class="fas fa-search search-icon"></span>-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tagline container">
+            Ab Har Wish Hogi Poori
+        </div>
+    </div>
+    <div class="intermediate-page">
+
+        <div class="row container">
+            <div class="col-md-5">
+                Buy Gift Items Online at India's Best Online Gifts Store - myKart
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <img class="card-img-top" src="https://st3.depositphotos.com/4601361/i/600/depositphotos_130130692-stock-photo-gift-stack-hand-christmas.jpg" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Buy wall hangings, clocks, object d’arts, vases, bowls, knick-knacks to brighten up the homes of friends and families. Present your friends with a small token of your love and appreciation. Moreover, the range of gifting options
+                            in mykart is vast. Gift unique and affordable presents from Flipkart with the mykart voucher from PAYBACK.</p>
+                        <div>
+                            <button class="btn btn-danger">Read More</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="content-style">
+        <div class="text-style">
+            myKart is the online shopping site. Our mission is to bring everyone to our marketplace and make everyons's life easy.
+        </div>
+
+    </div>
+    <div class="feature-products container">
+        Featured Products
+
+        <div class="products-categories container">
+            <i class="bi bi-collection-fill" data-bs-toggle="modal" data-bs-target="#myModal3" type="button" style="font-size: 20px;"></i>&nbsp;
+            <strong style="font-size: 20px;font-weight: bold;">Categories</strong>
+            <div class="modal" id="myModal3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+               
+                </div> -->
+                        <div class="modal-body">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <div class="row" style="margin-top: 100px;">
+                                <div class="col-6 text-center ">
+                                    <a routerLink="/electronics"> <img src="../../../assets/tv2.jpeg" alt="" data-bs-dismiss="modal"> </a>
+                                    <div style="text-align:center;margin-top: 40px;"><span><strong >Electronics</strong></span></div>
+                                </div>
+                                <div class="col-6 text-center ">
+                                    <a routerLink="/clothing" routerLinkActive="active" data-bs-dismiss="modal"> <img src="../../../assets/men.jpg" alt=""> </a>
+                                    <div style="text-align:center;margin-top: 40px;"><span><strong >Men's Clothing</strong></span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-products">
+            <div class="row">
+                <div class="myCard col-md-3" *ngFor="let product of myProducts">
+
+                    <img src={{product.image}} style="box-shadow: 0 10px 15px rgb(0,0,0,0.19), 0 6px 6px rgb(0,0,0,0.23);">
+
+                    <strong style="text-align: center;padding:30px;font-weight:bold;font-size: 20px;">{{product.title}}</strong>
+                    <!-- <div class="card-body">
+                        
+                        <strong>Category :  {{product.category}}</strong> <br>
+                        <strong>Price : ${{product.price}}</strong> <br>
+                        <p>{{product.description}}</p>
+                         <div class="align-icons">   
+                            <i class="fas fa-heart heart"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                           <i class="fas fa-share"></i>
+                           <i class="far fa-bookmark"></i>
+                       </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+
+
+
+
+        <div class="footer-menu">
+
+            <div class="row">
+
+                <div class=" col-md-6">
+
+                    <ul class="footer-list">
+                        <li><span class="footer-menu-title"> About us</span></li>
+                        <li>What's The myKart</li>
+                        <li>Our Facebook page</li>
+                        <li>Products blogs</li>
+                        <li>Product Guidelines</li>
+                        <li>Careers</li>
+                        <li>Help Center</li>
+                        <li>myKart Labs</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+
+                    <ul class="footer-list">
+                        <li><span class="footer-menu-title">Our policies</span></li>
+                        <li>Copyright & Trademark</li>
+                        <li>Personalized ads</li>
+                        <li>Terms of service</li>
+                        <li>Privacy & Cookies</li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li><span class="footer-menu-title">More Info</span></li>
+                        <li>For business</li>
+                        <li>For developers</li>
+                        <li>For press</li>
+                        <li>For investors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu-1">
+            <ul class="footer-list">
+                <li>
+                    <h2 class="contact-ti">Get in touch</h2>
+                </li>
+                <li> <a href="mailto:jayeshsmpatil@gmail.com">Mail us</a></li>
+                <li>Follow us on Facebook</li>
+                <li>Follow us on Twitter</li>
+                <li>Follow us on Instagram</li>
+            </ul>
+            <div class="copyright-style">
+                <span>   © Jayesh Patil 2021</span>
+            </div>
+        </div>
+    </div>
+
+</header>

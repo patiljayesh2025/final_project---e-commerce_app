@@ -1,0 +1,24 @@
+<div class="container clothing">
+    <div class="searchbar ">
+        <input type="text" class="text-center" [(ngModel)]="searchTerm" placeholder="Search here...">
+    </div>
+    <div class="title-1 mt-5">
+        <i class="bi bi-diagram-3"></i>&nbsp;&nbsp;Men's Clothing
+
+    </div>
+    <div class=" row">
+        <div class="col-md-4" *ngFor="let c of clothing | pipe :searchTerm">
+            <div class="myCard text-center">
+                <img src={{c.image}} alt="Card image cap">
+                <div class="card-content">
+                    <strong>{{c.title}}</strong>
+                    <div class="text-center">
+                        <strong class="badge badge-warning">{{c.category}}</strong>&nbsp;
+                        <strong><span class="badge badge-info"> ₹ {{c.price}}</span></strong> &nbsp;
+                        <span class="add-button" type="button" (click)='addToMyCart(c.title,c.price,c.description,c.category,c.image)'><i class="bi bi-plus-square-fill "></i></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

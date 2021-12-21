@@ -1,0 +1,23 @@
+<div class="container electronics">
+
+    <div class="searchbar ">
+        <input type="text" class="text-center" [(ngModel)]="searchTerm" placeholder="Search here...">
+    </div>
+    <div class="title-1 mt-5">
+        <i class="bi bi-diagram-3"></i>&nbsp;&nbsp;Electronics
+    </div>
+    <div class=" row">
+        <div class="col-md-4" *ngFor="let e of electronics | pipe : searchTerm">
+            <div class="myCard text-center">
+                <img src={{e.image}} alt="Card image cap" class="cart">
+                <div class="card-content">
+                    <strong>{{e.title}}</strong>
+                    <div class="text-center">
+                        <strong class="badge badge-warning">{{e.category}}</strong>&nbsp;
+                        <strong><span class="badge badge-info"> ₹ {{e.price}}</span></strong> &nbsp;
+                        <span class="add-button" type="button" (click)='addToMyCart(e.title,e.price,e.description,e.category,e.image)'><i class="bi bi-plus-square-fill "></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

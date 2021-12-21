@@ -1,0 +1,50 @@
+.clothing .title-1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #555555;
+}
+
+.clothing .myCard {
+    border: 1px gray;
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.clothing .myCard img {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.clothing .myCard img:hover {
+    transform: scale(1.1);
+}
+
+.clothing .searchbar {
+    float: right;
+}
+
+.clothing input {
+    width: 500px;
+    border-radius: 13px;
+    border: 2px solid lightgray;
+    height: 40px;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(85, 85, 85, 0.1);
+}
+
+.add-button:hover {
+    transform: scale(1.2);
+}
+
+
+/* .electronics .card :hover{
+
+box-shadow: 0 20px 20px rgb(0,0,0,0.19), 0 15px 15px rgb(0,0,0,0.23);
+
+} */

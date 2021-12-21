@@ -1,0 +1,99 @@
+<span *ngIf="isLogged===true">
+<span>Hello , {{userName}}</span>&nbsp;&nbsp;
+<i class="fa fa-sign-out" (click)="logout()" type="button"></i>&nbsp;&nbsp;
+</span>
+<span *ngIf="isLogged===false"><strong>Login</strong> &nbsp;&nbsp;
+    <i class="fas fa-sign-in-alt" data-bs-toggle="modal" data-bs-target="#myModal" type="button"></i> &nbsp; &nbsp;
+</span>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+               
+                </div> -->
+            <div class="modal-body">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                <form class="container form " [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="login-title">
+                        <div style="font-size: 80px;">
+                            <i class="bi bi-bag-check"></i>
+                        </div>
+                        <span style="margin-top:40px;">Log in to discover new things.</span>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="email" formControlName="email" placeholder="Email" #myEmail class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="password" formControlName="password" placeholder="Password" #myPassword class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input style="background-color:rgb(230, 0, 35);color:white" type="submit" value="Submit" class="form-control" data-bs-dismiss="modal">
+                    </div>
+
+                    <div class="form-group mb-1 password-style">
+                        <strong>Not having account ? <a href="#"   data-bs-dismiss="modal"  data-bs-toggle="modal" data-bs-target="#myModal2"  type="button">Create account</a> </strong>
+                    </div>
+                    <div class="form-group mb-1 password-style">
+                        <span type="button"><strong>Forgot your password ?</strong></span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content" style="height:700px;width:400px">
+            <!-- <div class="modal-header">
+               
+                </div> -->
+            <div class="modal-body">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                <form class="container form " [formGroup]="signupForm" (ngSubmit)="signUp()">
+                    <div class="login-title">
+                        <div style="font-size: 80px;">
+                            <i class="bi bi-bag-check"></i>
+                        </div>
+                        <span>Create account to discover new things.</span>
+                    </div>
+                    <!-- <div class="mb-3 form-group">
+                        <input type="number" formControlName="id" [(ngModel)]="id" placeholder="id" class="form-control" required>
+                    </div> -->
+                    <div class="mb-3 form-group">
+                        <input type="text" formControlName="name" #name placeholder="Name" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="text" #username formControlName="username" placeholder="Username" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="email" formControlName="email" #email placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <input type="password" formControlName="password" placeholder="Password" #password class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input style="background-color:rgb(230, 0, 35);color:white" routerLink="/home" type="submit" value="Submit" class="form-control" data-bs-dismiss="modal">
+                    </div>
+
+                    <div class="form-group mb-1 password-style">
+                        <strong>Already having an account ? <a href="#"  data-bs-dismiss="modal"  data-bs-toggle="modal"  data-bs-target="#myModal"  type="button">Log in</a> </strong>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-danger">Cancel</button>
+                </div> -->
+        </div>
+    </div>
+</div>

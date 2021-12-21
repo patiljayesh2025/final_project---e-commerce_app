@@ -1,0 +1,42 @@
+.modal-content{
+    border-radius: 30px;
+    width :350px;
+    height:550px;
+    color:rgb(51, 51, 51);
+}
+.modal-body button{
+    float: right;
+}
+form{
+    margin-top:20px;
+
+}
+.password-style{
+    color:#555555;
+    font-size: 13px;
+    text-align:center;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+.cart-style{
+    margin-right:20px;
+
+}
+.cart-style  a{
+   margin-right:20px;
+}
+
+form input
+{
+    border-radius: 15px;
+    height:45px;
+}
+.modal-body .login-title{
+font-size: 2rem;
+margin-bottom:30px;
+text-align: center;
+}
+
+

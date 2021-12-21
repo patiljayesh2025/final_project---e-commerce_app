@@ -1,0 +1,96 @@
+{
+    "users": [{
+            "id": 1,
+            "name": "Jayesh",
+            "username": "patiljayesh",
+            "password": "jayesh123",
+            "email": "jayeshsmpatil@gmail.com",
+            "isLoggedIn": true,
+            "cart": [{
+                    "id": 2,
+                    "title": "Men's T-Shirts",
+                    "price": "100",
+                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+                    "category": "men's clothing",
+                    "image": "./assets/tshirt.png"
+                },
+                {
+                    "id": 1,
+                    "title": "Men's T-Shirts",
+                    "price": "100",
+                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+                    "category": "men's clothing",
+                    "image": "./assets/tshirt.png"
+                },
+                {
+                    "id": 3,
+                    "title": "Men's T-Shirts",
+                    "price": "100",
+                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+                    "category": "men's clothing",
+                    "image": "./assets/tshirt.png"
+                },
+                {
+                    "id": 4,
+                    "title": "Men's T-Shirts",
+                    "price": "100",
+                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+                    "category": "men's clothing",
+                    "image": "./assets/tshirt.png"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Rajesh",
+            "username": "rajesh",
+            "password": "rajesh",
+            "email": "rajesh@gmail.com",
+            "isLoggedIn": false,
+            "cart": []
+        },
+        {
+            "id": 3,
+            "name": "Ram",
+            "username": "ramSharma",
+            "password": "ram",
+            "email": "ram@gmail.com",
+            "isLoggedIn": false,
+            "cart": []
+        },
+        {
+            "id": 4,
+            "name": "Neeraj",
+            "username": "neeraj",
+            "password": "neeraj",
+            "email": "neeraj@gmail.com",
+            "isLoggedIn": false,
+            "cart": []
+        },
+        {
+            "id": 5,
+            "name": "rer",
+            "username": "fdf",
+            "email": "rahudfl@gmail.com",
+            "isLoggedIn": false,
+            "password": "1234fdsf"
+        },
+        {
+            "id": 6,
+            "name": "raja",
+            "username": "rajaram@gmail.com",
+            "email": "raja@gmail.com",
+            "password": "raja",
+            "isLoggedIn": false
+        },
+        {
+            "id": 8,
+            "name": "Rahul",
+            "username": "rahulsharma",
+            "email": "rahul@gmail.com",
+            "password": "12345",
+            "isLoggedIn": false,
+            "cart": null
+        }
+    ]
+}

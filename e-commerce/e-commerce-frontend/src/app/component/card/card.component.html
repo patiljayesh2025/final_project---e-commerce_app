@@ -1,0 +1,63 @@
+<div class="container myCart">
+
+    <div class="searchbar ">
+        <input type="text" class="text-center" [(ngModel)]="searchTerm" placeholder="Search here...">
+    </div>
+
+    <div class="title-1 mt-5">
+        <i class="bi bi-diagram-3"></i>&nbsp;&nbsp; My Cart
+    </div>
+    <div class=" row">
+        <div class="col-md-4" *ngFor="let e of myProducts | pipe : searchTerm">
+            <div class="myCard text-center">
+                <img src={{e.image}} alt="Card image cap" class="cart-image">
+                <div class="card-content ">
+                    <strong>{{e.title}}</strong>
+                    <div class="text-center ">
+                        <strong class="badge badge-warning ">{{e.category}}</strong>&nbsp;
+                        <strong><span class="badge badge-info "> ₹ {{e.price}}</span></strong> &nbsp;
+                        <span class="add-button" type="button" (click)='removeFromCart(e.id)'><i class="bi bi-dash-square-fill"></i></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row check-out container">
+        <!-- <span style="margin-left:60px;margin-top:10px;">
+                <strong><span class="badge badge-secondary"> Price Details</span></strong>
+
+        </span> -->
+
+        <div class="col-6 mt-5">
+            <ul>
+
+                <li><strong><span class="badge badge-dark">Price({{totalItems}}&nbsp;&nbsp;items)</span> : <span class="badge badge-dark">{{totalAmount}}&nbsp;₹</span> </strong></li>
+                <li><strong><span class="badge badge-dark">Discount</span>  : <span class="badge badge-dark">0&nbsp;₹</span> </strong></li>
+                <li><strong><span class="badge badge-dark"> Delivery Charges </span>: <span class="badge badge-dark"> FREE</span></strong></li>
+                <li><strong><span class="badge badge-dark">Total Amount To Pay </span>   : <span class="badge badge-dark">{{totalAmount}}&nbsp;₹</span> </strong></li>
+
+            </ul>
+
+        </div>
+        <div class="col-6 mt-5">
+            <ul>
+                <li><strong> <span class="badge badge-dark">Total Items</span> : <span class="badge badge-dark" > {{totalItems}}</span>  </strong> </li>
+                <li><strong><span class="badge badge-dark">Address :</span>   </strong> <textarea rows=2 cols=25 class="form-control"></textarea></li>
+            </ul>
+            <div style="margin-left:150px;margin-top:15px">
+                <!-- <button class="form-control" style="background-color: #009879;color:white;width:420px;margin:15px 30px 10px 60px"></button> -->
+                <google-pay-button environment="TEST" buttonType="buy" buttonColor="black" [paymentRequest]="paymentRequest" (loadpaymentdata)="onLoadPaymentData($event)" (error)="onError($event)" [paymentAuthorizedCallback]="onPaymentDataAuthorized">
+                </google-pay-button>
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <br>
+        <br>
+    </div>
+
+</div>
