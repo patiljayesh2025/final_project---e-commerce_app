@@ -1,0 +1,138 @@
+
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Men's Jacket",
+        "price": "100",
+       "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
+      , "category" : "men's clothing",
+      "image": "./assets/jacket.webp"
+    },
+    {
+      "id": 2,
+      "title": "Men's T-Shirts",
+      "price": "100",
+     "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
+    , "category" : "men's clothing",
+    "image": "./assets/tshirt.png"
+  }
+  ,{
+        "id":3,
+        "title" :"Amazon Alexa",
+        "price":100,
+        "description":"Amazon Echo (4th Gen) Smart Speaker with Dolby Technology, 2020 Release, Black"
+        ,"category":"Electronics",
+        "image":"./assets/alexa.webp"
+      
+  },
+  {
+    "id":4,
+    "title" :"V-Guard VG 50 New Model Voltage Stabilizer",
+    "price":100,
+    "description":"V-Guard VG 50 New Model Voltage Stabilizer"
+    ,"category":"Electronics",
+    "image":"./assets/electronics1.jpeg"
+  
+}
+,
+{
+  "id":5,
+  "title" :"HAVELLS Ambrose 1200 mm 3 Blade Ceiling Fan",
+  "price":100,
+  "description":"HAVELLS Ambrose 1200 mm 3 Blade Ceiling Fan"
+  ,"category":"Electronics",
+  "image":"./assets/electronics2.jpeg"
+
+}
+,
+{
+  "id":6,
+  "title" :"Whirlpool 190 L Direct Cool Single Door 2 Star Refriger...",
+  "price":100,
+  "description":"Whirlpool 190 L Direct Cool Single Door 2 Star Refriger..."
+  ,"category":"Electronics",
+  "image":"./assets/electronics3.jpeg"
+
+},
+
+{
+  "id":7,
+  "title" :"Whirlpool 190 L Direct Cool Single Door 2 Star Refriger...",
+  "price":100,
+  "description":"Whirlpool 190 L Direct Cool Single Door 2 Star Refriger..."
+  ,"category":"Electronics",
+  "image":"./assets/electronics4.jpeg"
+
+},
+{
+  "id":8,
+  "title" :"Singer M1155 Zigzag Sewing Machine Electric Sewing Mach...",
+  "price":100,
+  "description":"Singer M1155 Zigzag Sewing Machine Electric Sewing Mach..."
+  ,"category":"Electronics",
+  "image":"./assets/electronics5.jpeg"
+
+},
+{
+  "id":9,
+  "title" :"Sansui Regal 1600 W Steam Iron ",
+  "price":100,
+  "description":"Sansui Regal 1600 W Steam Iron "
+  ,"category":"Electronics",
+  "image":"./assets/electronics6.jpeg"
+
+},
+
+{
+  "id":10,
+  "title" :"LG 139 cm (55 inch) Ultra HD (4K) LED Smart TV ",
+  "price":100,
+  "description":"LG 139 cm (55 inch) Ultra HD (4K) LED Smart TV "
+  ,"category":"Electronics",
+  "image":"./assets/electronics7.jpeg"
+
+},
+{
+  "id":11,
+  "title" :"Men Regular Fit Color Block Slim Collar Casual Shirt",
+  "price":100,
+  "description":"Men Regular Fit Color Block Slim Collar Casual Shirt"
+  ,"category":"men's clothing",
+  "image":"./assets/clothing1.jpeg"
+
+},
+
+{
+  "id":12,
+  "title" :"Men Regular Fit Checkered Casual Shirt",
+  "price":100,
+  "description":"Men Regular Fit Color Block Slim Collar Casual Shirt"
+  ,"category":"men's clothing",
+  "image":"./assets/clothing2.jpeg"
+
+} ,
+
+{
+  "id":13,
+  "title" :"Men Regular Fit Solid Casual Shirt",
+  "price":100,
+  "description":"Men Regular Fit Solid Casual Shirt"
+  ,"category":"men's clothing",
+  "image":"./assets/clothing3.jpeg"
+
+}
+,
+
+{
+  "id":14,
+  "title" :"Men Slim Fit Graphic Print Hood Collar Casual Shirt",
+  "price":100,
+  "description":"Men Slim Fit Graphic Print Hood Collar Casual Shirt"
+  ,"category":"men's clothing",
+  "image":"./assets/clothing4.jpeg"
+
+}
+]
+
+  }
